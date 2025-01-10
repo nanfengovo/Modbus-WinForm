@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus-WinForm", "Modbus-WinForm\Modbus-WinForm.csproj", "{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62A05E9D-FEDC-4D63-AA29-801B8746068D}
+	EndGlobalSection
+EndGlobal

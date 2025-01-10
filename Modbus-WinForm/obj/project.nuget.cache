@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e0p62lVHENM=",
+  "success": true,
+  "projectFilePath": "E:\\Code\\Study\\Modbus\\Modbus-WinForm\\Modbus-WinForm\\Modbus-WinForm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nmodbus\\3.0.81\\nmodbus.3.0.81.nupkg.sha512"
+  ],
+  "logs": []
+}
