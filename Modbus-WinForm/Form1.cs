@@ -1,3 +1,4 @@
+using NLog;
 using NModbus;
 using NModbus.Extensions.Enron;
 using System.Net;
@@ -8,9 +9,14 @@ namespace Modbus_WinForm
 {
     public partial class Form1 : Form
     {
+
+        //Log
+        public static Logger logger = LogManager.GetCurrentClassLogger();
+
         public Form1()
         {
             InitializeComponent();
+            logger.Info("程序启动！！！");
         }
         /// <summary>
         /// 验证ip合法性
@@ -89,7 +95,9 @@ namespace Modbus_WinForm
                     if (!IsValidIPAddress(IP))
                     {
                         MessageBox.Show("输入的IP地址不合法！！请重新输入！");
+                        logger.Warn("输入的IP地址不合法！！请重新输入！");
                         TxtIP.Clear();
+                        logger.Info("由于输入的地址不合法系统自动清除！");
 
                     }
                     using (var Client = new TcpClient(IP, Port))
@@ -106,6 +114,7 @@ namespace Modbus_WinForm
                                 for (int i = 0; i < result1.Length; i++)
                                 {
                                     TxtResult.AppendText($"线圈地址 {Address + i}: {result1[i]}\r\n");
+                                    logger.Info($"成功对ip为{IP},端口为{Port}的设备起始地址为{Address}数量为{Query}读取，设备id为{SlaveID},读取结果为线圈地址 {Address + i}: {result1[i]}\r\n");
                                 }
                                 break;
                             case 2:
@@ -114,6 +123,7 @@ namespace Modbus_WinForm
                                 for (int i = 0; i < result2.Length; i++)
                                 {
                                     TxtResult.AppendText($"输入状态地址 {Address + i}: {result2[i]}\r\n");
+                                    logger.Info($"成功对ip为{IP},端口为{Port}的设备起始地址为{Address}数量为{Query}读取，设备id为{SlaveID},读取结果为输入状态地址 {Address + i}: {result2[i]}\r\n");
                                 }
                                 break;
                             case 3:
@@ -122,6 +132,7 @@ namespace Modbus_WinForm
                                 for (int i = 0; i < result3.Length; i++)
                                 {
                                     TxtResult.AppendText($"保持寄存器地址 {Address + i}: {result3[i]}\r\n");
+                                    logger.Info($"成功对ip为{IP},端口为{Port}的设备起始地址为{Address}数量为{Query}读取，设备id为{SlaveID},读取结果为保持寄存器地址 {Address + i}: {result3[i]}\r\n");
                                 }
                                 break;
                             case 4:
@@ -130,16 +141,10 @@ namespace Modbus_WinForm
                                 for (int i = 0; i < result4.Length; i++)
                                 {
                                     TxtResult.AppendText($"输入寄存器地址 {Address + i}: {result4[i]}\r\n");
+                                    logger.Info($"成功对ip为{IP},端口为{Port}的设备起始地址为{Address}数量为{Query}读取，设备id为{SlaveID},读取结果为输入寄存器地址 {Address + i}: {result4[i]}\r\n");
                                 }
                                 break;
-
                         }
-
-
-
-
-
-
                     }
                 }
                 catch (NModbus.SlaveException ex)
@@ -147,10 +152,17 @@ namespace Modbus_WinForm
                     if (ex.FunctionCode == 129)
                     {
                         MessageBox.Show("地址数量超过可读取的数量！！！");
+                        logger.Error(ex.StackTrace);
+                    }
+                    else if (ex.FunctionCode == 130 || ex.FunctionCode == 131 || ex.FunctionCode == 132)
+                    {
+                        MessageBox.Show("功能码和从站不匹配！！");
+                        logger.Warn(ex.Message);
                     }
                     else
                     {
                         MessageBox.Show(ex.Message);
+                        logger.Warn(ex.Message);
                     }
 
                 }
@@ -162,15 +174,16 @@ namespace Modbus_WinForm
             catch (Exception ex)
             {
 
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show("存在输入框没填或输入的格式不正确！");
+                logger.Warn(ex.Message);
             }
 
-           
+
 
 
         }
 
-       
+
         /// <summary>
         /// HelpTest
         /// </summary>
@@ -194,6 +207,7 @@ namespace Modbus_WinForm
         private void BtnClear_Click(object sender, EventArgs e)
         {
             TxtResult.Clear();
+            logger.Info("执行了一次清空结果！");
         }
 
 
@@ -204,7 +218,7 @@ namespace Modbus_WinForm
         /// <param name="e"></param>
         private void BtnConn_Click(object sender, EventArgs e)
         {
-           
+
             try
             {
                 //ip
@@ -212,31 +226,37 @@ namespace Modbus_WinForm
                 //port
                 int Port = Convert.ToInt32(TxtPort.Text);
 
-                if(!IsValidIPAddress(IP))
+                if (!IsValidIPAddress(IP))
                 {
                     MessageBox.Show("输入的IP地址不合法！！请重新输入！");
                     TxtIP.Clear();
+                    logger.Info($"输入的IP地址不合法！！请重新输入！！");
 
                 }
-               
+
                 try
                 {
                     var Client = new TcpClient(IP, Port);
                     MessageBox.Show("连接成功！！！");
+                    logger.Info($"成功与ip为{IP},端口为{Port}的设备建立连接！！");
                 }
                 catch (Exception ex)
                 {
 
                     MessageBox.Show(ex.Message);
+                    logger.Warn(ex.Message);
                 }
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show("IP或Port不能为空！！");
+                logger.Warn(ex.Message);
             }
-           
+
 
         }
+
+
     }
 }

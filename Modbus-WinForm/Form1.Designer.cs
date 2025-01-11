@@ -175,12 +175,12 @@
             TxtResult.Name = "TxtResult";
             TxtResult.ReadOnly = true;
             TxtResult.ScrollBars = ScrollBars.Vertical;
-            TxtResult.Size = new Size(1170, 187);
+            TxtResult.Size = new Size(1170, 706);
             TxtResult.TabIndex = 13;
             // 
             // BtnRead
             // 
-            BtnRead.Location = new Point(695, 820);
+            BtnRead.Location = new Point(1498, 884);
             BtnRead.Name = "BtnRead";
             BtnRead.Size = new Size(225, 55);
             BtnRead.TabIndex = 14;
@@ -190,7 +190,7 @@
             // 
             // BtnClear
             // 
-            BtnClear.Location = new Point(1189, 823);
+            BtnClear.Location = new Point(1498, 1042);
             BtnClear.Name = "BtnClear";
             BtnClear.Size = new Size(218, 52);
             BtnClear.TabIndex = 15;
@@ -200,7 +200,7 @@
             // 
             // BtnConn
             // 
-            BtnConn.Location = new Point(277, 820);
+            BtnConn.Location = new Point(1498, 694);
             BtnConn.Name = "BtnConn";
             BtnConn.Size = new Size(225, 55);
             BtnConn.TabIndex = 16;
@@ -212,7 +212,7 @@
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1808, 1082);
+            ClientSize = new Size(1808, 1267);
             Controls.Add(BtnConn);
             Controls.Add(BtnClear);
             Controls.Add(BtnRead);

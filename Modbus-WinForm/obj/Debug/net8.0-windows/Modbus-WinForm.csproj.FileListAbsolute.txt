@@ -18,3 +18,5 @@ E:\Code\Study\Modbus\Modbus-WinForm\Modbus-WinForm\obj\Debug\net8.0-windows\Modb
 E:\Code\Study\Modbus\Modbus-WinForm\Modbus-WinForm\obj\Debug\net8.0-windows\Modbus-WinForm.genruntimeconfig.cache
 E:\Code\Study\Modbus\Modbus-WinForm\Modbus-WinForm\obj\Debug\net8.0-windows\ref\Modbus-WinForm.dll
 E:\Code\Study\Modbus\Modbus-WinForm\Modbus-WinForm\obj\Debug\net8.0-windows\Modbus-WinForm.sourcelink.json
+E:\Code\Study\Modbus\Modbus-WinForm\Modbus-WinForm\bin\Debug\net8.0-windows\NLog.config
+E:\Code\Study\Modbus\Modbus-WinForm\Modbus-WinForm\bin\Debug\net8.0-windows\NLog.dll

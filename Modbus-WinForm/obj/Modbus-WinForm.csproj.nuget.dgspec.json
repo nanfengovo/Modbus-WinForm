@@ -50,6 +50,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.3.4, )"
+            },
             "NModbus": {
               "target": "Package",
               "version": "[3.0.81, )"
