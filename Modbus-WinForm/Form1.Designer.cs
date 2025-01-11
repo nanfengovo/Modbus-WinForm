@@ -44,12 +44,13 @@
             TxtResult = new TextBox();
             BtnRead = new Button();
             BtnClear = new Button();
+            BtnConn = new Button();
             SuspendLayout();
             // 
             // LabIP
             // 
             LabIP.AutoSize = true;
-            LabIP.Location = new Point(88, 161);
+            LabIP.Location = new Point(277, 171);
             LabIP.Name = "LabIP";
             LabIP.Size = new Size(42, 31);
             LabIP.TabIndex = 0;
@@ -57,14 +58,14 @@
             // 
             // TxtIP
             // 
-            TxtIP.Location = new Point(256, 154);
+            TxtIP.Location = new Point(445, 164);
             TxtIP.Name = "TxtIP";
             TxtIP.Size = new Size(200, 38);
             TxtIP.TabIndex = 1;
             // 
             // TxtPort
             // 
-            TxtPort.Location = new Point(1018, 154);
+            TxtPort.Location = new Point(1207, 164);
             TxtPort.Name = "TxtPort";
             TxtPort.Size = new Size(200, 38);
             TxtPort.TabIndex = 3;
@@ -72,7 +73,7 @@
             // LabPort
             // 
             LabPort.AutoSize = true;
-            LabPort.Location = new Point(850, 161);
+            LabPort.Location = new Point(1039, 171);
             LabPort.Name = "LabPort";
             LabPort.Size = new Size(68, 31);
             LabPort.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             LabModbusTCP.AutoSize = true;
             LabModbusTCP.Font = new Font("Microsoft YaHei UI", 22.125F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            LabModbusTCP.Location = new Point(506, 38);
+            LabModbusTCP.Location = new Point(695, 48);
             LabModbusTCP.Name = "LabModbusTCP";
             LabModbusTCP.Size = new Size(403, 78);
             LabModbusTCP.TabIndex = 4;
@@ -90,7 +91,7 @@
             // 
             // Txtid
             // 
-            Txtid.Location = new Point(256, 295);
+            Txtid.Location = new Point(445, 305);
             Txtid.Name = "Txtid";
             Txtid.Size = new Size(200, 38);
             Txtid.TabIndex = 6;
@@ -98,7 +99,7 @@
             // LabSlaveid
             // 
             LabSlaveid.AutoSize = true;
-            LabSlaveid.Location = new Point(88, 302);
+            LabSlaveid.Location = new Point(277, 312);
             LabSlaveid.Name = "LabSlaveid";
             LabSlaveid.Size = new Size(108, 31);
             LabSlaveid.TabIndex = 5;
@@ -106,7 +107,7 @@
             // 
             // TxtFun
             // 
-            TxtFun.Location = new Point(1018, 277);
+            TxtFun.Location = new Point(1207, 287);
             TxtFun.Name = "TxtFun";
             TxtFun.Size = new Size(200, 38);
             TxtFun.TabIndex = 8;
@@ -114,7 +115,7 @@
             // LabFun
             // 
             LabFun.AutoSize = true;
-            LabFun.Location = new Point(850, 284);
+            LabFun.Location = new Point(1039, 294);
             LabFun.Name = "LabFun";
             LabFun.Size = new Size(120, 31);
             LabFun.TabIndex = 7;
@@ -122,7 +123,7 @@
             // 
             // TxtAdd
             // 
-            TxtAdd.Location = new Point(312, 425);
+            TxtAdd.Location = new Point(501, 435);
             TxtAdd.Name = "TxtAdd";
             TxtAdd.Size = new Size(200, 38);
             TxtAdd.TabIndex = 10;
@@ -130,7 +131,7 @@
             // LabAdd
             // 
             LabAdd.AutoSize = true;
-            LabAdd.Location = new Point(88, 432);
+            LabAdd.Location = new Point(277, 442);
             LabAdd.Name = "LabAdd";
             LabAdd.Size = new Size(195, 31);
             LabAdd.TabIndex = 9;
@@ -139,7 +140,7 @@
             // LabQuery
             // 
             LabQuery.AutoSize = true;
-            LabQuery.Location = new Point(850, 450);
+            LabQuery.Location = new Point(1039, 460);
             LabQuery.Name = "LabQuery";
             LabQuery.Size = new Size(91, 31);
             LabQuery.TabIndex = 11;
@@ -159,7 +160,7 @@
             SelectQuery.Items.Add("7");
             SelectQuery.Items.Add("8");
             SelectQuery.Items.Add("9");
-            SelectQuery.Location = new Point(1018, 450);
+            SelectQuery.Location = new Point(1207, 460);
             SelectQuery.Name = "SelectQuery";
             SelectQuery.Size = new Size(240, 38);
             SelectQuery.TabIndex = 12;
@@ -169,7 +170,7 @@
             // 
             TxtResult.AcceptsTab = true;
             TxtResult.BackColor = SystemColors.ControlLightLight;
-            TxtResult.Location = new Point(88, 527);
+            TxtResult.Location = new Point(277, 537);
             TxtResult.Multiline = true;
             TxtResult.Name = "TxtResult";
             TxtResult.ReadOnly = true;
@@ -179,7 +180,7 @@
             // 
             // BtnRead
             // 
-            BtnRead.Location = new Point(865, 815);
+            BtnRead.Location = new Point(695, 820);
             BtnRead.Name = "BtnRead";
             BtnRead.Size = new Size(225, 55);
             BtnRead.TabIndex = 14;
@@ -189,7 +190,7 @@
             // 
             // BtnClear
             // 
-            BtnClear.Location = new Point(191, 815);
+            BtnClear.Location = new Point(1189, 823);
             BtnClear.Name = "BtnClear";
             BtnClear.Size = new Size(218, 52);
             BtnClear.TabIndex = 15;
@@ -197,11 +198,22 @@
             BtnClear.UseVisualStyleBackColor = true;
             BtnClear.Click += BtnClear_Click;
             // 
+            // BtnConn
+            // 
+            BtnConn.Location = new Point(277, 820);
+            BtnConn.Name = "BtnConn";
+            BtnConn.Size = new Size(225, 55);
+            BtnConn.TabIndex = 16;
+            BtnConn.Text = "测试连接";
+            BtnConn.UseVisualStyleBackColor = true;
+            BtnConn.Click += BtnConn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1623, 997);
+            ClientSize = new Size(1808, 1082);
+            Controls.Add(BtnConn);
             Controls.Add(BtnClear);
             Controls.Add(BtnRead);
             Controls.Add(TxtResult);
@@ -219,7 +231,7 @@
             Controls.Add(TxtIP);
             Controls.Add(LabIP);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Modbus连接";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -243,5 +255,6 @@
         private TextBox TxtResult;
         private Button BtnRead;
         private Button BtnClear;
+        private Button BtnConn;
     }
 }

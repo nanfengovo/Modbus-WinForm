@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}|Modbus-WinForm\\Modbus-WinForm.csproj|solutionrelative:modbus-winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}|Modbus-WinForm\\Modbus-WinForm.csproj|e:\\code\\study\\modbus\\modbus-winform\\modbus-winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}|Modbus-WinForm\\Modbus-WinForm.csproj|E:\\Code\\Study\\Modbus\\Modbus-WinForm\\modbus-winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{512CAD6E-6C35-49F2-B5FD-D313BDAE76FE}|Modbus-WinForm\\Modbus-WinForm.csproj|solutionrelative:modbus-winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,6 +37,10 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
@@ -44,7 +48,7 @@
               "RelativeDocumentMoniker": "Modbus-WinForm\\Form1.Designer.cs",
               "ToolTip": "E:\\Code\\Study\\Modbus\\Modbus-WinForm\\Modbus-WinForm\\Form1.Designer.cs",
               "RelativeToolTip": "Modbus-WinForm\\Form1.Designer.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAgwA4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAowA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T13:03:13.425Z",
               "EditorCaption": ""
@@ -57,7 +61,7 @@
               "RelativeDocumentMoniker": "Modbus-WinForm\\Form1.cs",
               "ToolTip": "E:\\Code\\Study\\Modbus\\Modbus-WinForm\\Modbus-WinForm\\Form1.cs*",
               "RelativeToolTip": "Modbus-WinForm\\Form1.cs*",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowDYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwD0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T13:02:59.19Z",
               "EditorCaption": ""
