@@ -18,6 +18,29 @@ namespace Modbus_WinForm
             InitializeComponent();
             logger.Info("程序启动！！！");
         }
+
+        /// <summary>
+        /// 禁用按钮
+        /// </summary>
+        private void DisableButtons()
+        {
+            BtnRead.Enabled = false;
+            BtnClear.Enabled = false;
+            BtnConn.Enabled = false;
+        }
+
+        /// <summary>
+        /// 启用按钮
+        /// </summary>
+        private void EnableButtons()
+        {
+            BtnRead.Enabled = true;
+            BtnClear.Enabled = true;
+            BtnConn.Enabled = true;
+        }
+
+
+
         /// <summary>
         /// 验证ip合法性
         /// </summary>
@@ -37,7 +60,8 @@ namespace Modbus_WinForm
         /// <param name="e"></param>
         private void BtnRead_Click(object sender, EventArgs e)
         {
-
+            //点击按钮后就禁用
+            DisableButtons();
 
             #region 填写提示
             //if (TxtIP.Text == null)
@@ -164,11 +188,7 @@ namespace Modbus_WinForm
                         MessageBox.Show(ex.Message);
                         logger.Warn(ex.Message);
                     }
-
                 }
-
-
-
                 #endregion
             }
             catch (Exception ex)
@@ -176,6 +196,11 @@ namespace Modbus_WinForm
 
                 MessageBox.Show("存在输入框没填或输入的格式不正确！");
                 logger.Warn(ex.Message);
+            }
+            finally
+            {
+                //启用按钮
+                EnableButtons();
             }
 
 
