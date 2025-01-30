@@ -254,7 +254,11 @@ namespace Modbus_WinForm
                 if (!IsValidIPAddress(IP))
                 {
                     MessageBox.Show("输入的IP地址不合法！！请重新输入！");
-                    TxtIP.Clear();
+                    #region 由于输入的IP地址是非法的，我们清空，避免手动删除影响使用的体验，清空有两种方式
+                    //TxtIP.Clear();
+                    TxtIP.Text = string.Empty;
+                    #endregion
+
                     logger.Info($"输入的IP地址不合法！！请重新输入！！");
 
                 }
