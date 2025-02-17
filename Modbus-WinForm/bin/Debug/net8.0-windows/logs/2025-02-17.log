@@ -3,3 +3,57 @@
 2025-02-17 22:19:03.4092 WARN 由于目标计算机积极拒绝，无法连接。 [::ffff:127.0.0.1]:502 
 2025-02-17 22:21:31.8491 WARN 由于目标计算机积极拒绝，无法连接。 [::ffff:127.0.0.1]:502 
 2025-02-17 22:21:36.6726 WARN 由于目标计算机积极拒绝，无法连接。 [::ffff:127.0.0.1]:502 
+2025-02-17 22:26:34.2763 INFO 程序启动！！！ 
+2025-02-17 22:28:25.9678 INFO 成功与ip为127.0.0.1,端口为502的设备建立连接！！ 
+2025-02-17 22:28:26.6611 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 0: False
+ 
+2025-02-17 22:28:26.6652 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 1: False
+ 
+2025-02-17 22:28:26.6652 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 2: True
+ 
+2025-02-17 22:42:33.3803 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 0: False
+ 
+2025-02-17 22:42:33.3866 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 1: True
+ 
+2025-02-17 22:42:33.3866 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 2: True
+ 
+2025-02-17 23:04:17.2005 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 0: False
+ 
+2025-02-17 23:04:17.2005 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 1: False
+ 
+2025-02-17 23:04:17.2176 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 2: False
+ 
+2025-02-17 23:04:18.7964 INFO 执行了一次清空结果！ 
+2025-02-17 23:04:19.4108 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 0: False
+ 
+2025-02-17 23:04:19.4108 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 1: False
+ 
+2025-02-17 23:04:19.4240 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 2: False
+ 
+2025-02-17 23:04:20.2214 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 0: False
+ 
+2025-02-17 23:04:20.2319 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 1: False
+ 
+2025-02-17 23:04:20.2319 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 2: False
+ 
+2025-02-17 23:04:20.8754 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 0: False
+ 
+2025-02-17 23:04:20.8754 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 1: False
+ 
+2025-02-17 23:04:20.8901 INFO 成功对ip为127.0.0.1,端口为502的设备起始地址为0数量为3读取，设备id为1,读取结果为线圈地址 2: False
+ 
+2025-02-17 23:04:40.1376 WARN Exception of type 'NModbus.SlaveException' was thrown.
+Function Code: 130
+Exception Code: 1 - The function code received in the query is not an allowable action for the server (or slave). This may be because the function code is only applicable to newer devices, and was not implemented in the unit selected.It could also indicate that the server(or slave) is in the wrong state to process a request of this type, for example because it is unconfigured and is being asked to return register values. 
+2025-02-17 23:04:45.6029 WARN Exception of type 'NModbus.SlaveException' was thrown.
+Function Code: 131
+Exception Code: 1 - The function code received in the query is not an allowable action for the server (or slave). This may be because the function code is only applicable to newer devices, and was not implemented in the unit selected.It could also indicate that the server(or slave) is in the wrong state to process a request of this type, for example because it is unconfigured and is being asked to return register values. 
+2025-02-17 23:04:50.7231 WARN Exception of type 'NModbus.SlaveException' was thrown.
+Function Code: 132
+Exception Code: 1 - The function code received in the query is not an allowable action for the server (or slave). This may be because the function code is only applicable to newer devices, and was not implemented in the unit selected.It could also indicate that the server(or slave) is in the wrong state to process a request of this type, for example because it is unconfigured and is being asked to return register values. 
+2025-02-17 23:04:57.7049 INFO 执行了一次清空结果！ 
+2025-02-17 23:06:28.2620 INFO 成功与ip为127.0.0.1,端口为502的设备建立连接！！ 
+2025-02-17 23:06:28.7280 WARN 尝试了未知的函数代码：6。
+ 
+2025-02-17 23:06:29.5484 WARN 尝试了未知的函数代码：6。
+ 

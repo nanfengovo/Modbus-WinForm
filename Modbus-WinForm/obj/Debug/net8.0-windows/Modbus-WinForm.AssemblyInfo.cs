@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Modbus-WinForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f43eb4dca228bac3c6c23ebac9099cfad267b0b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6336fb8431dcc329e1abef664845e717497d4d0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Modbus-WinForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Modbus-WinForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

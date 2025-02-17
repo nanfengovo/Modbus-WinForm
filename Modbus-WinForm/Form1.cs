@@ -168,6 +168,11 @@ namespace Modbus_WinForm
                                     logger.Info($"成功对ip为{IP},端口为{Port}的设备起始地址为{Address}数量为{Query}读取，设备id为{SlaveID},读取结果为输入寄存器地址 {Address + i}: {result4[i]}\r\n");
                                 }
                                 break;
+                            default:
+                                // 当Function不是1, 2, 3, 或4时执行的代码
+                                TxtResult.AppendText("未知的函数代码。\r\n");
+                                logger.Warn($"尝试了未知的函数代码：{Function}。\r\n");
+                                break;
                         }
                     }
                 }
@@ -186,6 +191,7 @@ namespace Modbus_WinForm
                     else
                     {
                         MessageBox.Show(ex.Message);
+                        TxtResult.AppendText(ex.Message);
                         logger.Warn(ex.Message);
                     }
                 }
@@ -194,7 +200,8 @@ namespace Modbus_WinForm
             catch (Exception ex)
             {
 
-                MessageBox.Show("存在输入框没填或输入的格式不正确！");
+                MessageBox.Show($"系统发生异常，详情为{ex.Message}");
+                TxtResult.AppendText(ex.Message);
                 logger.Warn(ex.Message);
             }
             finally
